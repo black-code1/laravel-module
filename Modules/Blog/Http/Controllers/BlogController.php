@@ -16,7 +16,7 @@ class BlogController extends Controller
     public function index()
     {
         $module = Module::find('blog');
-        dd($module->disable());
+        dd($module->enable());
         return view('blog::index');
     }
 
