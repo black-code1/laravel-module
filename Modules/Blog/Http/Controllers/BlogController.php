@@ -16,7 +16,7 @@ class BlogController extends Controller
     public function index()
     {
         $module = Module::find('blog');
-        dd($module->getPath());
+        dd($module->getExtraPath('Assets'));
         return view('blog::index');
     }
 
