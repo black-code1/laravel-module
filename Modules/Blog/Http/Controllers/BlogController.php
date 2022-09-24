@@ -5,6 +5,7 @@ namespace Modules\Blog\Http\Controllers;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Nwidart\Modules\Facades\Module;
 
 class BlogController extends Controller
 {
@@ -15,7 +16,8 @@ class BlogController extends Controller
     public function index()
     {
         $path = module_path('Blog');
-        dd($path);
+        $module = Module::all();
+        dd($path, $module);
         return view('blog::index');
     }
 
