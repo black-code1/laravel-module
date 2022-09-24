@@ -7,13 +7,13 @@
         <title>Module Blog</title>
 
        {{-- Laravel Mix - CSS File --}}
-       {{-- <link rel="stylesheet" href="{{ mix('css/blog.css') }}"> --}}
+        <link rel="stylesheet" href="{{ mix('css/blog.css') }}">
 
     </head>
     <body>
         @yield('content')
 
         {{-- Laravel Mix - JS File --}}
-        {{-- <script src="{{ mix('js/blog.js') }}"></script> --}}
+         <script src="{{ mix('js/blog.js') }}"></script>
     </body>
 </html>
