@@ -16,7 +16,7 @@ class BlogController extends Controller
     public function index()
     {
         $module = Module::find('blog');
-        dd($module->getLowerName());
+        dd($module->getStudlyName());
         return view('blog::index');
     }
 
