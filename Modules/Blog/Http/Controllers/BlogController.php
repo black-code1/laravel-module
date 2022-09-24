@@ -15,11 +15,8 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $path = module_path('Blog');
-        $module = Module::all();
-        $scan_paths = Module::getScanPaths();
-        $use_storage_path = Module::getUsedStoragePath();
-        dd($path, $module, $scan_paths, $use_storage_path);
+        $module = Module::find('blog');
+        dd($module);
         return view('blog::index');
     }
 
