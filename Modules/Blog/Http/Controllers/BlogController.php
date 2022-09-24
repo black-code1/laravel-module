@@ -16,7 +16,7 @@ class BlogController extends Controller
     public function index()
     {
         $module = Module::find('blog');
-        $module->delete();
+        dd($module->getRequires());
         return view('blog::index');
     }
 
