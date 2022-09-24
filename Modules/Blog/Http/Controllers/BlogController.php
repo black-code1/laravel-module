@@ -14,6 +14,8 @@ class BlogController extends Controller
      */
     public function index()
     {
+        $path = module_path('Blog');
+        dd($path);
         return view('blog::index');
     }
 
